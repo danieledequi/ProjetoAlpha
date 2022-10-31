@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Status">
+
+
+  <TextView
+      android:id="@+id/txt_title"
+      android:layout_width="341dp"
+      android:layout_height="50dp"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="76dp"
+      android:justificationMode="inter_word"
+      android:text="Sua solicitação de abertura de conta foi enviada."
+      android:textColor="@color/material_dynamic_neutral10"
+      android:textSize="20dp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.3"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/status"
+      android:layout_width="229dp"
+      android:layout_height="28dp"
+      android:text="Status: Em análise."
+      android:textColor="@color/vermelho"
+      android:textSize="20dp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:layout_editor_absoluteY="164dp" />
+
+  <TextView
+      android:id="@+id/textView4"
+      android:layout_width="356dp"
+      android:layout_height="144dp"
+      android:layout_marginStart="40dp"
+      android:layout_marginEnd="30dp"
+      android:layout_marginBottom="324dp"
+      android:justificationMode="inter_word"
+      android:text="Mas não se preocupe! Quando a solicitação for finalizada, você receberá no e-mail cadastrado as informações necessárias :)"
+      android:textColor="@color/material_dynamic_neutral10"
+      android:textSize="20dp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+  <Button
+      tools:ignore="MissingConstraints"
+      android:id="@+id/bt_fechar"
+      style="@style/Button"
+      android:backgroundTint="@color/white"
+      android:text="Fechar"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.537"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:layout_editor_absoluteY="530dp"
+      android:textColor="@color/black"
+      app:backgroundTint="@color/white"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

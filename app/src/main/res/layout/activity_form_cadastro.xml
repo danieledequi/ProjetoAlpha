@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".FormCadastro"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/title_cadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+
+    />
+
+    <TextView
+        android:id="@+id/title_cadastro"
+        android:layout_width="447dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="50dp"
+        android:text="Para abrir uma conta no ALPHA é simples e rápido. Preencha seus dados abaixo:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_weight="5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/containerComponents"
+        style="@style/ContainerComponents"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_cadastro" />
+
+    <EditText
+        android:id="@+id/edit_nome"
+        style="@style/Edit_Text"
+        android:layout_marginTop="5dp"
+        android:hint="Nome completo"
+        android:InputType="text"
+        app:layout_constraintTop_toTopOf="@id/containerComponents"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"/>
+
+    <EditText
+        android:id="@+id/edit_CPF"
+        style="@style/Edit_Text"
+        android:layout_marginTop="5dp"
+        android:InputType="number"
+        android:hint="CPF"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/edit_nome" />
+
+    <EditText
+        android:id="@+id/edit_telefone"
+        style="@style/Edit_Text"
+        android:layout_marginTop="5dp"
+        android:InputType="phone"
+        android:hint="telefone"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/edit_CPF" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        style="@style/Edit_Text"
+        android:layout_marginTop="5dp"
+        android:InputType="TextEmailAddress"
+        android:hint="E-mail"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/edit_telefone" />
+
+    <EditText
+        android:id="@+id/edit_nascimento"
+        style="@style/Edit_Text"
+        android:layout_marginTop="5dp"
+        android:InputType="date"
+        android:hint="Data de nascimento"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/edit_email" />
+
+
+
+    <EditText
+        android:id="@+id/edit_endereco"
+        style="@style/Edit_Text"
+        android:layout_marginTop="5dp"
+        android:InputType="text | number"
+        android:hint="Logradouro e nº"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/edit_nascimento" />
+
+
+    <EditText
+        android:id="@+id/edit_CEP"
+        style="@style/Edit_Text"
+        android:layout_marginTop="5dp"
+        android:InputType="number"
+        android:hint="CEP"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/edit_endereco" />
+
+    <EditText
+        android:id="@+id/edit_bairro"
+        style="@style/Edit_Text"
+        android:layout_marginTop="5dp"
+        android:InputType="text"
+        android:hint="Bairro"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/edit_CEP" />
+
+    <EditText
+        android:id="@+id/edit_cidade_estado"
+        style="@style/Edit_Text"
+        android:layout_marginTop="5dp"
+        android:InputType="text"
+        android:hint="Cidade/Estado"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/edit_bairro" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_enviar"
+        style="@style/Button"
+        android:text="Enviar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_cidade_estado"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
